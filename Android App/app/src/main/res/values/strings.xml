@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FoodWize</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in_english">SIGN IN</string>
+    <string name="sign_up_english">SIGN UP</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verification_code">Code</string>
+    <string name="get_verification_code">Get Code</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="copyright">Copyright © 2018</string>
+</resources>
