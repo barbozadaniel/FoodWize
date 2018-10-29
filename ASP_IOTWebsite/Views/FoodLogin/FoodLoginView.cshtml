@@ -1,0 +1,98 @@
+﻿<div class="row">
+    <img src="~/Content/Images/foodwise-logo.png" style="width: 50%;"/>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+    <div style="min-height:60px"></div>
+</div>
+<hr />
+<div class="row" >
+    @*<div class="form-control pre-scrollable">
+        <div class="row"><img src="~/Content/Images/pasta.png" style="width:20%"/></div>
+        <div class="row"><img src="~/Content/Images/burger.jpg" style="" /></div>
+        <div class="row"><img src="~/Content/Images/cake.png" style="width:20%" /></div>
+        <div class="row"><img src="~/Content/Images/pizza.png" style="" /></div>
+    </div>*@
+    <div class="scrollbar scrollbar-primary">
+        <h1 style="font-weight:bold">FREE FOOD !!!</h1>
+        <hr />
+        <div class="force-overflow">
+            <table style="align-content:center; font-size:medium">
+                <tr>
+                    <td>102, Engineering Center G, ASU Main Campus</td>
+                    <td style="font-weight:bold">No of Plates available: 15</td>
+                    <td><img src="~/Content/Images/pasta.png" style="width:20%" /></td>
+                </tr>
+                <tr> 
+                    <td>221, Baker Street, Central Park</td>
+                    <td style="font-weight:bold">No of Plates available: 12</td>
+                    <td><img src="~/Content/Images/burger.jpg" style="width:25%" /></td>
+                </tr>
+                <tr>
+                    <td>20, Beach Park Camp, 7th Street</td>
+                    <td style="font-weight:bold">No of Plates available: 10</td>
+                    <td><img src="~/Content/Images/cake.png" style="width:25%" /></td>
+                </tr>
+                <tr>   
+                    <td>1230, E Lemon Street, Orange St</td>
+                    <td style="font-weight:bold">No of Plates available: 45</td>
+                    <td><img src="~/Content/Images/pizza.png" style="width:30%" /></td>
+                </tr>
+            </table>
+            <hr />
+            @*<div class="row"><img src="~/Content/Images/pasta.png" style="width:20%" /></div>
+            <div class="row"><img src="~/Content/Images/burger.jpg" style="" /></div>
+            <div class="row"><img src="~/Content/Images/cake.png" style="width:20%" /></div>
+            <div class="row"><img src="~/Content/Images/pizza.png" style="" /></div>*@
+        </div>
+    </div>
+    <form>
+        @*<div class="col-sm-2"></div>*@
+        <div class="col-sm-10" style="">
+            <h1 style="font-weight:bold">Account Login</h1>
+            <hr />
+            <div class="form-group">
+                <label class="col-md-2 control-label">User Name</label>
+                <div class="col-md-10">
+                    <input id="txtUserName" class="form-control" type="text" />
+                    <label class="text-danger" style="display:none"></label>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label class="col-md-2 control-label">Password</label>
+                <div class="col-md-10">
+                    <input id="txtPassword" class="form-control" type="password" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Role</label>
+                <div class="col-md-10">
+                    <select id="ddRoleType" class="form-control">
+                        <option value="Vendor">Vendor</option>
+                        <option value="Manager">Restaurant Manager</option>
+                        @*<option value="FreeFood">Free Food User</option>*@
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <div class="checkbox">
+                        <input type="checkbox" name="chkbx1" value="">
+                        <label class="">Remember Me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="button" value="Log in" class="btn btn-default" id="btnLogin"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </form>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Page Scripts/Login.js")
+}
+

@@ -1,0 +1,163 @@
+﻿<div class="col-sm-12 pull-right" style="margin-bottom:40px">
+    <div class="col-sm-10">
+        <img src="~/Content/Images/foodwise-logo.png" class="pull-left" width="150px" style="vertical-align:central;" />
+    </div>
+    <div class="col-sm-2">
+        <div style="font-size:large; font-weight:bold">PITCHFORKS MANAGER </div>
+        <button id="btnLogout" style="margin-top: 27px;">Logout</button>
+    </div>
+</div>
+
+<div style="min-height:30px"></div>
+
+<h2>
+    Storage
+</h2>
+
+<table id="tblStorage" class="table-responsive table-striped table-hover" style="text-align: center;">
+    <thead style="font-weight:bold">
+        <tr>
+            <td>Sr No</td>
+            <td>Ingredient</td>
+            <td>Quantity in Store</td>
+            <td>Unit</td>
+            <td>Shelf Location</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Bun</td>
+            <td>50</td>
+            <td>buns</td>
+            <td>G-11</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Beef</td>
+            <td>10</td>
+            <td>lbs</td>
+            <td>M-15</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Macaroni</td>
+            <td>8</td>
+            <td>lbs</td>
+            <td>D-05</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Cheese</td>
+            <td>4</td>
+            <td>lbs</td>
+            <td>M-21</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Tomatoes</td>
+            <td>12</td>
+            <td>lbs</td>
+            <td>G-36</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Flour</td>
+            <td>10</td>
+            <td>lbs</td>
+            <td>G-11</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Pepperoni </td>
+            <td>4</td>
+            <td>lbs</td>
+            <td>M-01</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Milk</td>
+            <td>10</td>
+            <td>gal</td>
+            <td>C-121</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sugar</td>
+            <td>5</td>
+            <td>lbs</td>
+            <td>D-04</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Butter</td>
+            <td>9</td>
+            <td>lbs</td>
+            <td>D-44</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Vanilla</td>
+            <td>3</td>
+            <td>oz</td>
+            <td>D-71</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Chocolate</td>
+            <td>25</td>
+            <td>oz</td>
+            <td>G-11</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Ranch</td>
+            <td>12</td>
+            <td>oz</td>
+            <td>D-11</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 style="padding-top:10px;">Add New Ingredient:</h3>
+<div class="col-sm-12">
+    <div class="form-group">
+        <label class="col-md-2 control-label">Ingredient :</label>
+        <div class="col-md-10">
+            <input id="txtIngName" class="form-control" type="text" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Quantity to be Added :</label>
+        <div class="col-md-10">
+            <input id="txtQuantity" class="form-control" type="number" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Unit :</label>
+        <div class="col-md-10">
+            <select id="ddUnit" class="form-control">
+                <option value="Kg">Kg</option>
+                <option value="lbs">lbs</option>
+                <option value="oz">oz</option>
+                <option value="gals">gal</option>
+                <option value="buns">buns</option>
+                <option value="packetsg">packets</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Shelf Location :</label>
+        <div class="col-md-10">
+            <input id="txtShelfLoc" class="form-control" type="text" />
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="btnAddIngredient">Add Ingredient</button>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Page Scripts/Storage.js")
+}

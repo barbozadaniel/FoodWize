@@ -1,0 +1,80 @@
+﻿<div class="col-sm-12 pull-right" style="margin-bottom:40px">
+    <div class="col-sm-10">
+        <img src="~/Content/Images/foodwise-logo.png" class="pull-left" width="150px" style="vertical-align:central;" />
+    </div>
+    <div class="col-sm-2">
+        <div style="font-size:large; font-weight:bold">PITCHFORKS MANAGER </div>
+        <button id="btnLogout" style="margin-top: 27px;">Logout</button>
+    </div>
+</div>
+
+<div style="min-height:30px"></div>
+<h1 style="font-weight:bold">NOTIFY</h1>
+<table>
+    <tr>
+        <td><label class="control-label">Number of Plates available :</label></td>
+        <td><input id="txtNumPeople" class="form-control" type="text" /></td>
+    </tr>
+    <tr>
+        <td><label class="">Dish to Donate :</label></td>
+        <td>
+            <div class="">
+                <select id="ddRecipeList" class="form-control">
+                    <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                    <option value="Chocolate Cake">Chocolate Cake</option>
+                    <option value="Ranch">Ranch</option>
+                    <option value="Salad">Salad</option>
+                    <option value="Macaroni & Cheese">Macaroni & Cheese</option>
+                    <option value="Cheeseburger">Cheeseburger</option>
+                    <option value="Buttered Buns">Buttered Buns</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="btnSend">Send a Public Notification </button>
+        </td>
+        <td></td>
+    </tr>
+</table>
+
+<div class="scrollbar scrollbar-primary">
+    @*<h1 style="font-weight:bold">NOTIFY</h1>*@
+    <hr />
+    <div class="force-overflow">
+        <table style="align-content:center; font-size:medium">
+            <tr id="freePizza" style="display:none">
+                <td>1230, E Lemon Street, Orange St</td>
+                <td style="font-weight:bold">No of Plates available: 45</td>
+                <td><img src="~/Content/Images/pizza.png" style="width:30%" /></td>
+            </tr>
+            <tr>
+                <td>102, Engineering Center G, ASU Main Campus</td>
+                <td style="font-weight:bold">No of Plates available: 15</td>
+                <td><img src="~/Content/Images/pasta.png" style="width:20%" /></td>
+            </tr>
+            <tr>
+                <td>221, Baker Street, Central Park</td>
+                <td style="font-weight:bold">No of Plates available: 12</td>
+                <td><img src="~/Content/Images/burger.jpg" style="width:25%" /></td>
+            </tr>
+            <tr>
+                <td>20, Beach Park Camp, 7th Street</td>
+                <td style="font-weight:bold">No of Plates available: 10</td>
+                <td><img src="~/Content/Images/cake.png" style="width:25%" /></td>
+            </tr>
+            
+        </table>
+        <hr />
+        @*<div class="row"><img src="~/Content/Images/pasta.png" style="width:20%" /></div>
+            <div class="row"><img src="~/Content/Images/burger.jpg" style="" /></div>
+            <div class="row"><img src="~/Content/Images/cake.png" style="width:20%" /></div>
+            <div class="row"><img src="~/Content/Images/pizza.png" style="" /></div>*@
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Page Scripts/Notify.js")
+}

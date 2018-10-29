@@ -1,0 +1,44 @@
+﻿<div class="col-sm-12 pull-right" style="margin-bottom:40px">
+    <div class="col-sm-10">
+        <img src="~/Content/Images/foodwise-logo.png" class="pull-left" width="150px" style="vertical-align:central;" />
+    </div>
+    <div class="col-sm-2">
+        <button id="btnLogout" style="margin-top: 27px;">Logout</button>
+    </div>
+</div>
+
+<div style="min-height:30px"></div>
+
+<h2>
+    Manager Dashboard
+</h2>
+
+<div class="col-sm-12">
+    <div class="col-sm-6 pull-left">
+        <img src="~/Content/Images/sample-graph-1.png" class="" style="vertical-align:central;" width="75%"/>
+    </div>
+    <div class="col-sm-6 pull-left">
+        <img src="~/Content/Images/sample-graph-2.png" class="" style="vertical-align:central;" width="75%"/>
+    </div>
+</div>
+<hr />
+<br />
+<div class="col-sm-12" style="margin-top:250px;padding-bottom:200px">
+    <div class="col-md-3">
+        <button id="btnStorage" onclick="window.location.href = '/Storage/Storage';">Storage</button>
+    </div>
+    <div class="col-md-3">
+        <button id="btnRecipe" onclick="window.location.href = '/Recipe/Recipe';">Recipe</button>
+    </div>
+    <div class="col-md-3">
+        <button id="btnOrder" onclick="window.location.href = '/Order/Order';">Order</button>
+    </div>
+    <div class="col-md-3">
+        <button id="btnNotify" onclick="window.location.href = '/Notify/Notify';">Notify</button>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Page Scripts/ManagerDash.js")
+}

@@ -1,0 +1,143 @@
+﻿<div class="col-sm-12 pull-right" style="margin-bottom:40px">
+    <div class="col-sm-10">
+        <img src="~/Content/Images/foodwise-logo.png" class="pull-left" width="150px" style="vertical-align:central;" />
+    </div>
+    <div class="col-sm-2">
+        <div style="font-size:large; font-weight:bold">PITCHFORKS MANAGER </div>
+        <button id="btnLogout" style="margin-top: 27px;">Logout</button>
+    </div>
+</div>
+
+<div style="min-height:30px"></div>
+
+<div class="alert alert-success" role="alert" id="messageDiv" style="display:none">
+    <div style="font-size:large">Order Placed Succesfully. # Order No. 451</div>
+</div>
+
+<h2>
+    Order
+</h2>
+
+<div class="col-sm-12" style="padding-bottom:30px;margin-bottom:30px;">
+       
+
+    <table>
+        <tr>
+            <td><label class="control-label">Number of People for Food Order :</label></td>
+            <td><input id="txtNumPeople" class="form-control" type="text" /></td>
+        </tr>
+        <tr>
+            <td><label class="">Recipe to Order :</label></td>
+            <td>
+                <div class="">
+                    <select id="ddRecipeList" class="form-control">
+                        <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                        <option value="Chocolate Cake">Chocolate Cake</option>
+                        <option value="Ranch">Ranch</option>
+                        <option value="Salad">Salad</option>
+                        <option value="Macaroni & Cheese">Macaroni & Cheese</option>
+                        <option value="Cheeseburger">Cheeseburger</option>
+                        <option value="Buttered Buns">Buttered Buns</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <div>
+        <button id="btnCheck">Check Price</button>
+        <br />
+        <br />
+
+    </div>
+    
+    <div id="divPriceCheck" style="display:none">
+        <h2>Order Quantity and Storage Analysis</h2>
+        <table id="tblAnalysis" class="table-responsive table-striped table-hover" width="100%">
+            <thead style="font-weight:bold">
+                <tr>
+                    <td id="ttttt"></td>
+                    <td>Quantity required as per Recipe</td>
+                    <td>Quantity in Storage</td>
+                    <td>Final Quantity for Order</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flour</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Pepperoni</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Tomatoes</td>
+                    <td>500</td>
+                    <td>250</td>
+                    <td>250</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Price Comaprision with all Vendors</h2>
+        <table id="tblPriceCheck" class="table-responsive table-striped table-hover" width="100%">
+            <thead style="font-weight:bold">
+                <tr>
+                    <td>Vendor</td>
+                    <td>Total Cost</td>
+                    <td>Rating</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WholeSale Corp</td>
+                    <td>$450</td>
+                    <td>4.5 Stars</td>
+                </tr>
+                <tr>
+                    <td>CostCo</td>
+                    <td>$470</td>
+                    <td>4.9 Stars</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <tr>
+                <td><label class="">Select Vendor :</label></td>
+                <td>
+                    <div class="">
+                        <select id="ddVendor" class="form-control">
+                            <option value="WholeSale Corp">WholeSale Corp</option>
+                            <option value="CostCo">CostCo</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="btnFinalOrder">Place Order</button></td>
+                <td> </td>
+            </tr>
+        </table>
+
+    </div>
+    
+    
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/Page Scripts/Order.js")
+}
